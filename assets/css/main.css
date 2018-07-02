@@ -1,0 +1,1123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot, 
+thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; background: transparent;}
+a {
+	outline: none;
+	color: rgb(0,0,0);
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+body {font-family: 'PFBeauSansPro-Regular';}
+.wrapper_all {
+	min-width: 1122px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.wrapper {
+	width: 1122px;
+	margin: 0 auto;
+}
+
+
+/***************************** HEADER ******************************/
+.header {
+	height: 110px;
+	background: #222;
+	padding-top: 30px;
+}
+.logo,
+.address,
+.phones,
+.social,
+.language {
+	height: 50px;
+	float: left;
+}
+.appointments {
+	float: right;
+}
+.logo a {
+	display: block;
+}
+.address {
+	margin-left: 110px;
+	padding-right: 30px;
+	border-right: 1px solid #333;
+}
+.address address {
+	margin-top: -5px;
+	font-size: 21px;
+	color: #fff;
+	font-style: normal;
+}
+.address .work_time,
+.address .city {
+	font-size: 13px;
+	color: #ccc;
+	letter-spacing: 0.3px;
+}
+.address .city {
+	float: left;
+}
+.address a {
+	display: inline-block;
+	float: right;
+	font-size: 13px;
+	color: #a78d5a;
+	text-decoration: underline;
+}
+.address a:hover {
+	text-decoration: none;
+}
+.phones {
+	margin-left: 30px;
+	padding-right: 30px;
+	border-right: 1px solid #333;
+}
+.phones .phone {
+	margin-top: -3px;
+}
+.phones .phone a {
+	font-size: 18px;
+	color: #fff;
+}
+.phones .back_call {
+	text-align: center;
+	margin-top: -3px;
+	display: block;
+	font-size: 13px;
+	color: #a78d5a;
+	text-decoration: underline;
+}
+.phones .back_call:hover {
+	text-decoration: none;
+}
+.social {
+	margin-left: 30px;
+	padding-right: 30px;
+	border-right: 1px solid #333;
+	width: 84px;
+	height: 50px;
+}
+.social .soc-s {
+	float: left;
+	display: block;
+	width: 25px;
+	height: 25px;
+	overflow: hidden;
+	position: relative;
+}
+.social .soc-s.insta {
+	background: url("../img/social-sprite.png") left top no-repeat;
+}
+.social .soc-s.vk {
+	background: url("../img/social-sprite.png") right top no-repeat;
+}
+.social .soc-s.odnokl {
+	background: url("../img/social-sprite.png") left bottom no-repeat;
+}
+.social .soc-s.pinterest {
+	background: url("../img/social-sprite.png") right bottom no-repeat;
+}
+.social .soc-s.insta:hover {
+	background: url("../img/social-sprite-hov.png") left top no-repeat;
+}
+.social .soc-s.vk:hover {
+	background: url("../img/social-sprite-hov.png") right top no-repeat;
+}
+.social .soc-s.odnokl:hover {
+	background: url("../img/social-sprite-hov.png") left bottom no-repeat;
+}
+.social .soc-s.pinterest:hover {
+	background: url("../img/social-sprite-hov.png") right bottom no-repeat;
+}
+.language {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.language a {
+	display: block;
+	padding-top: 5px;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #a78d5a;
+	text-decoration: underline;
+}
+.language a:hover {
+	text-decoration: none;
+}
+.language a.active {
+	text-decoration: none;
+	color: #ccc;
+}
+.appointments {
+	width: 190px;
+	height: 50px;
+}
+.appointments a {
+	display: table-cell;
+	width: 190px;
+	height: 50px;
+	vertical-align: middle;
+	text-align: center;
+	text-transform: uppercase;
+	border: 2px solid #a78d5a;
+	color: #a78d5a;
+	font-size: 14px;
+	font-family: 'PFBeauSansPro-SemiBold';
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+.appointments a:hover {
+	background: #a78d5a;
+	color: #222;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+nav {
+	height: 40px;
+	background: #333;
+	overflow: hidden;
+}
+nav ul {
+	text-align: center;
+	font-size: 0;
+	display: table;
+	margin: 0 auto;
+}
+nav ul li {
+	display: inline-block;
+	vertical-align: top;
+font-size: 11px;
+}
+nav ul li:last-child a {
+	border-right: 2px solid #444;
+}
+nav ul li a {
+	display: block;
+	height: 40px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 13px 30px;
+	border-left: 2px solid #444;
+}
+nav ul li a.active {
+	font-family: 'PFBeauSansPro-Bold';
+	font-size: 11px;
+	color: #222;
+	background: #a78d5a;
+	border-left: 2px solid #a78d5a;
+}
+nav ul li a.active:hover {
+	font-family: 'PFBeauSansPro-Bold';
+	font-size: 11px;
+	color: #222;
+	background: #a78d5a;
+}
+nav ul li:hover a {
+	color: #a78d5a;
+	border: 2px solid #a78d5a;
+	padding-top: 11px;
+	padding-right: 28px;
+}
+nav ul li:last-child:hover a {
+	padding-right: 30px;
+}
+/***************************** HEADER ******************************/
+
+.content {
+	background: #eee;
+	min-height: 400px;
+}
+
+/***************************** SLIDER ******************************/
+.slider,
+.slider .wrapper {
+	max-width: 1920px;
+	width: 100%;
+	height: 350px;
+	margin: 0 auto;
+	clear: both;
+	background: #0a0a0a;
+	overflow: hidden;
+}
+.slider .wrapper li,
+.slider .wrapper li img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.bx-wrapper {
+	position: relative;
+}
+.bx-controls-direction .bx-prev {
+	display: block;
+	text-indent: -9999px;
+	position: absolute;
+	top: 130px;
+	left: 115px;
+	width: 20px;
+	height: 90px;
+	background: url("../img/slider/left-arrow.png") center center no-repeat;
+}
+.bx-controls-direction .bx-next {
+	display: block;
+	text-indent: -9999px;
+	position: absolute;
+	top: 130px;
+	right: 115px;
+	width: 20px;
+	height: 90px;
+	background: url("../img/slider/right-arrow.png") center center no-repeat;
+}
+/***************************** SLIDER ******************************/
+
+
+/***************************** SERVICES ******************************/
+.services {
+	height: 290px;
+	background: #222;
+	text-align: center;
+}
+.service {
+	display: inline-block;
+	vertical-align: top;
+	width: 220px;
+}
+.service a {
+	display: block;
+	padding-top: 145px;
+}
+.service a.stylist {
+	background: url("../img/fen.png") center 35px no-repeat;
+}
+.service a.barber {
+	background: url("../img/poma.png") center 35px no-repeat;
+}
+.service a.makeup {
+	background: url("../img/gybn.png") center 35px no-repeat;
+}
+.service a.cosmetician {
+	background: url("../img/mil.png") center 35px no-repeat;
+}
+.service a.manicure {
+	background: url("../img/lak.png") center 35px no-repeat;
+}
+
+.service a.stylist:hover {
+	background: url("../img/fen-hov.png") center 35px no-repeat;
+}
+.service a.barber:hover {
+	background: url("../img/poma-hov.png") center 35px no-repeat;
+}
+.service a.makeup:hover {
+	background: url("../img/gybn-hov.png") center 35px no-repeat;
+}
+.service a.cosmetician:hover {
+	background: url("../img/mil-hov.png") center 35px no-repeat;
+}
+.service a.manicure:hover {
+	background: url("../img/lak-hov.png") center 35px no-repeat;
+}
+.service a .title_service {
+	font-family: 'PFBeauSansPro-SemiBold';
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.service a .text_service {
+	font-size: 13px;
+	color: #ccc;
+	margin-top: 15px;
+}
+/***************************** SERVICES ******************************/
+
+
+/***************************** SALES ******************************/
+.sales {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.title_block {
+	text-transform: uppercase;
+	font-family: 'PFBeauSansPro-Light';
+	font-size: 30px;
+	color: #a78d5a;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.sale_block {
+	width: 340px;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	margin-top: 30px;
+	margin-right: 50px;
+	margin-left: -4px;
+}
+.sale_block:first-child {
+	margin-left: 0;
+}
+.sale_block:last-child {
+	margin-right: 0;
+}
+.sale_block a {
+	display: block;
+}
+.sale_block a .sale_img {
+	overflow: hidden;
+	height: 220px;
+}
+.sale_block a img {
+	width: 100%;
+	height: auto;
+}
+.sale_block a .text_sale {
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 20px 25px;
+	background: #333;
+	text-align: center;
+}
+.sale_block a:hover .text_sale {
+	background: #a78d5a;
+	color: #222;
+	font-family: 'PFBeauSansPro-SemiBold';
+}
+/***************************** SALES ******************************/
+
+
+/***************************** Slogan ******************************/
+.slogan .wrapper {
+	height: 500px;
+	background: url("../img/quote-bg.jpg") center center no-repeat;
+	background-size: cover;
+	padding-left: 365px;
+	padding-top: 45px;
+	padding-right: 80px;
+}
+.slogan .title_slogan {
+	font-family: 'PFBeauSansPro-Light';
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.slogan .welcome_slogan {
+	font-family: 'MariaAntuanetta', 'Maria_Antuanetta';
+	font-size: 72px;
+	color: #a78d5a;
+}
+.slogan .text_slogan {
+	font-size: 16px;
+	color: #ccc;
+	margin-bottom: 25px;
+}
+.slogan .slogan_author {
+	border-top: 1px solid #444;
+	padding-top: 15px;
+	font-size: 16px;
+	color: #ccc;
+	width: 360px;
+}
+/***************************** Slogan ******************************/
+
+
+/************************** Specialists ***************************/
+.personal .wrapper {
+	background: #a78d5a;
+	padding-top: 55px;
+	padding-bottom: 55px;
+}
+.personal .title_block {
+	color: #111;
+	margin-bottom: 35px;
+	letter-spacing: 2px;
+}
+.carousel_personal {
+	text-align: center;
+}
+.carousel_personal .slide {
+	width: 180px;
+	height: 250px;
+	overflow: hidden;
+	display: inline-block;
+}
+.carousel_personal .slide a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.carousel_personal .slide a .pers_photo {
+	width: 180px;
+	height: 180px;
+	overflow: hidden;
+	position: relative;
+}
+.carousel_personal .slide a .pers_photo img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.carousel_personal .slide a .about_pers {
+	background: #fff;
+	padding-top: 12px;
+	text-align: center;
+	height: 100%;
+}
+.carousel_personal .slide a .about_pers .name_pers {
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #333;
+}
+.carousel_personal .slide a .about_pers .prof_pers {
+	font-size: 15px;
+	color: #666;
+}
+.carousel_personal .slide:hover a .about_pers .prof_pers {
+	color: #a78d5a;
+}
+.carousel_personal {
+	width: 980px;
+	margin: 0 auto;
+}
+.carousel_personal .bx-controls-direction .bx-prev {
+	display: block;
+	text-indent: -9999px;
+	position: absolute;
+	top: 85px;
+	left: -45px;
+	width: 20px;
+	height: 90px;
+	background: url("../img/personal/left-arrow.png") center center no-repeat;
+}
+.carousel_personal .bx-controls-direction .bx-next {
+	display: block;
+	text-indent: -9999px;
+	position: absolute;
+	top: 85px;
+	right: -45px;
+	width: 20px;
+	height: 90px;
+	background: url("../img/personal/right-arrow.png") center center no-repeat;
+}
+.carousel_personal .bx-controls-direction .bx-prev:hover {
+	background: url("../img/personal/left-arrow-hov.png") center center no-repeat;
+}
+.carousel_personal .bx-controls-direction .bx-next:hover {
+	background: url("../img/personal/right-arrow-hov.png") center center no-repeat;
+}
+/************************** Specialists ***************************/
+
+
+/************************** Brands ***************************/
+.brands {
+	margin-top: 75px;
+	padding-bottom: 75px;
+	text-align: center;
+}
+.brands .title_block {
+	margin-bottom: 35px;
+	letter-spacing: 2px;
+}
+.brand {
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	margin-right: 25px;
+}
+.brand:last-child {
+	margin-right: 0;
+}
+.brand .brand_img {
+	height: 100px;
+	overflow: hidden;
+}
+.brand .brand_img a {
+	display: block;
+	text-align: left;
+}
+.brand .brand_img a img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  -ms-opacity: 0.5;
+  -o-opacity: 0.5;
+  opacity: 0.5;
+}
+.brand:hover .brand_img a img {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none; /* IE 6-9 */
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+.brand .about_brand {
+	text-align: left;
+	font-size: 13px;
+	color: #333;
+}
+/************************** Brands ***************************/
+
+
+/************************** FOOTER ***************************/
+.footer {
+	min-height: 110px;
+	background: #222;
+	padding-top: 30px;
+}
+.copyright_webst {
+	float: left;
+}
+.footer .copyright {
+	font-size: 13px;
+	color: #fff;
+}
+.footer .webst {
+	margin-top: 20px;
+}
+.footer .webst a {
+	display: inline-block;
+	font-size: 14px;
+	color: 14px;
+	color: #fff;
+}
+.footer .webst a img {
+	float: right;
+	margin-left: 5px;
+}
+.footer .address {
+	margin-left: 60px;
+}
+/************************** FOOTER ***************************/
+
+
+
+
+.breadcrumbs {
+	padding: 19px 0;
+}
+.breadcrumbs ul li {
+	float: left;
+	margin-right: 15px;
+	font-size: 13px;
+	color: #ccc;
+}
+.breadcrumbs ul li a {
+	color: #a78d5a;
+	text-decoration: underline;
+}
+.breadcrumbs ul li a:hover {
+	text-decoration: none;
+}
+/************************ COMMAND PAGE **************************/
+.content.personnel {
+	background: #0a0a0a;
+	background: -webkit-radial-gradient(circle farthest-corner at 50% 150px, #111, #101010, #111, #0f0f0f, #0e0e0e, #0d0d0d, #0c0c0c, #0a0a0a, #090909, #080808, #070707);
+	background: radial-gradient(circle farthest-corner at 50% 150px, #111, #101010, #111, #0f0f0f, #0e0e0e, #0d0d0d, #0c0c0c, #0a0a0a, #090909, #080808, #070707);
+}
+.h1, h1 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-family: 'PFBeauSansPro-Light';
+	font-size: 30px;
+	color: #fff;
+}
+.people {
+	text-align: center;
+}
+.pers_block {
+	display: inline-block;
+	vertical-align: top;
+	width: 540px;
+	height: 340px;
+	overflow: hidden;
+	background: #fff;
+	padding-right: 30px;
+	margin-bottom: 30px;
+	margin-right: 30px;
+	text-align: left;
+}
+.pers_block:nth-child(2n) {
+	margin-right: 0;
+}
+.pers_block .foto_pers {
+	width: 250px;
+	float: left;
+	margin-right: 30px;
+	text-align: left;
+}
+.pers_block .name_pers {
+	margin-top: 20px;
+	text-align: left;
+}
+.pers_block .name_pers a {
+	font-size: 18px;
+	color: #a78d5a;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-align: left;
+}
+.pers_block .name_pers a:hover {
+	text-decoration: none;
+}
+.pers_block .about_pers {
+	font-size: 15px;
+	color: #222;
+	margin-top: 5px;
+	text-align: left;
+}
+.pers_block .slogan_pers {
+	font-size: 15px;
+	color: #333;
+	margin-top: 15px;
+	font-family: 'PFBeauSansPro-Light';
+	font-style: italic;
+	text-align: left;
+}
+.pers_block .services_pers {
+	font-family: 'PFBeauSansPro-Bold';
+	font-size: 13px;
+	color: #a78d5a;
+	text-transform: uppercase;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	text-align: left;
+}
+.pers_block .list_services {
+	font-size: 13px;
+	color: #333;
+	text-align: left;
+}
+.pers_block .list_services li {
+	margin-bottom: 5px;
+}
+.pers_block.last_block {
+	width: 340px;
+	height: 380px;
+	padding-right: 0;
+	margin-bottom: 0;
+}
+.pers_block.last_block .name_pers,
+.pers_block.last_block .about_pers,
+.pers_block.last_block .slogan_pers {
+	text-align: center;
+}
+.pers_block.last_block .foto_pers {
+	float: none;
+}
+.pers_block.last_block .name_pers {
+	margin-top: 20px;
+}
+.foto_command {
+	margin: 0 -125px;
+	background: #0a0a0a;
+}
+.title_foto_command {
+	font-family: 'MariaAntuanetta', 'Maria_Antuanetta';
+	font-size: 72px;
+	color: #a78d5a;
+	text-align: center;
+	margin-top: 50px;
+}
+.foto_command img {
+	display: block;
+	margin: 0 auto;
+}
+/************************ COMMAND PAGE **************************/
+
+
+/************************ STAFF PAGE **************************/
+.content.staff {
+	background: url("../img/staff_bg.jpg") center center no-repeat;
+	background-size: cover;
+}
+.info_block_staff {
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+.info_block_staff .info_staff {
+	float: left;
+	width: 755px;
+}
+.info_block_staff .info_service_staff {
+	float: right;
+	width: 275px;
+}
+.info_staff .name_staff {
+	font-family: 'PFBeauSansPro-Light';
+	font-size: 60px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.info_staff .prof_staff {
+	font-family: 'PFBeauSansPro-Light';
+	font-size: 36px;
+	color: #a78d5a;
+	text-transform: uppercase;
+	margin-bottom: 55px;
+}
+.info_staff .text_staff {
+	font-family: 'PFBeauSansPro-Thin';
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.info_staff .slogan_staff {
+	font-family: 'PFBeauSansPro-ThinItalic';
+	font-size: 24px;
+	color: #a78d5a;
+	margin: 50px 0 50px 50px;
+}
+.title_info_service_staff {
+	font-family: 'PFBeauSansPro-Bold';
+	font-size: 18px;
+	color: #a78d5a;
+	text-transform: uppercase;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+.info_service_staff li {
+	font-family: 'PFBeauSansPro-Light';
+	font-size: 18px;
+	color: #ccc;
+	margin-bottom: 10px;
+}
+.foto_block_staff {
+	padding-bottom: 60px;
+}
+.foto_staff {
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	width: 540px;
+	height: 360px;
+	position: relative;
+	overflow: hidden;
+}
+.foto_staff:nth-child(2n) {
+	margin-right: 0;
+}
+.foto_staff img {
+	display: block;
+}
+/************************ STAFF PAGE **************************/
+
+
+/************************ SERVICE PAGE **************************/
+.content.service_page .breadcrumbs ul li {
+    color: #333;
+}
+.content.service_page {
+	background: #eee;
+}
+.service_info_block {
+	margin-top: 20px;
+	padding-bottom: 50px;
+}
+.content.service_page .service_info {
+	float: left;
+	width: 540px;
+}
+.content.service_page .service_picture_block {
+	float: right;
+	width: 540px;
+}
+.content.service_page .service_picture_block .service_picture {
+	margin-bottom: 25px;
+	width: 540px;
+	height: 360px;
+	position: relative;
+	overflow: hidden;
+}
+.content.service_page .service_picture_block .service_picture img {
+	display: block;
+}
+.service_info .name_service {
+	font-family: 'PFBeauSansPro-Light';
+	font-size: 30px;
+	color: #111;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.service_info .title_service {
+	font-size: 18px;
+	color: #a78d5a;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.service_info .slogan_service {
+	font-family: 'PFBeauSansPro-Light';
+	font-size: 18px;
+	color: #666;
+	margin-bottom: 20px;
+}
+.service_info .text_service {
+	font-size: 16px;
+	color: #222;
+	margin-bottom: 25px;
+}
+.service_info .title_service_list {
+	font-family: 'PFBeauSansPro-Bold';
+	font-size: 18px;
+	color: #222;
+	margin-bottom: 25px;
+}
+.service_info ul li {
+	margin-bottom: 25px;
+}
+.service_info ul li .name_service_list {
+	height: 20px;
+	background: #eee;
+	float: left;
+	font-size: 16px;
+	color: #333;
+	padding-right: 4px;
+}
+.service_info ul li .price_service_list {
+	height: 20px;
+	background: #eee;
+	float: right;
+	font-family: 'PFBeauSansPro-SemiBold';
+	font-size: 18px;
+	color: #a78d5a;
+	margin-top: -2px;
+	padding-left: 5px;
+}
+.service_info ul li .bg_list {
+	height: 17px;
+	background: url("../img/service-page/pixel-bg.jpg") left bottom repeat-x;
+}
+.buy_block {
+	width: 540px;
+	height: 130px;
+	background: #333;
+	padding: 25px 30px 0;
+	margin-top: 50px;
+	margin-bottom: 55px;
+}
+.buy_block .button_block {
+	float: left;
+}
+.buy_block .button_block a {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 240px;
+	height: 80px;
+	text-transform: uppercase;
+	font-family: 'PFBeauSansPro-SemiBold';
+	font-size: 14px;
+	color: #a78d5a;
+	border: 2px solid #a78d5a;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+.buy_block .button_block a:hover {
+	color: #222;
+	background: #a78d5a;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+.buy_block .phone_block {
+	float: right;
+	width: 210px;
+}
+.buy_block .phone_block .title_phone {
+	font-size: 13px;
+	color: #ccc;
+	margin-bottom: 5px;
+}
+.buy_block .phone_block a {
+	font-family: 'PFBeauSansPro-SemiBold';
+	font-size: 23px;
+	color: #fff;
+}
+/************************ SERVICE PAGE **************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*		font-family: 'MariaAntuanetta', 'Maria_Antuanetta';		*/
+@font-face {
+  font-family: 'MariaAntuanetta';
+  src: url('../fonts/MariaAntuanetta.woff') format('woff'),
+       url('../fonts/MariaAntuanetta.ttf') format('truetype'),
+       url('../fonts/MariaAntuanetta.svg#MariaAntuanetta') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Maria_Antuanetta';
+  src: url('../fonts/Maria_Antuanetta.eot');
+  src: url('../fonts/Maria_Antuanetta.woff2') format('woff2'),
+       url('../fonts/Maria_Antuanetta.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*		font-family: 'PFBeauSansPro-Bold';		*/
+@font-face {
+  font-family: 'PFBeauSansPro-Bold';
+  src: url('../fonts/PFBeauSansPro-Bold.eot');
+  src: url('../fonts/PFBeauSansPro-Bold.woff2') format('woff2'),
+       url('../fonts/PFBeauSansPro-Bold.woff') format('woff'),
+       url('../fonts/PFBeauSansPro-Bold.ttf') format('truetype'),
+       url('../fonts/PFBeauSansPro-Bold.svg#PFBeauSansPro-Bold') format('svg'),
+       url('../fonts/PFBeauSansPro-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*		font-family: 'PFBeauSansPro-Light';		*/
+@font-face {
+  font-family: 'PFBeauSansPro-Light';
+  src: url('../fonts/PFBeauSansPro-Light.eot');
+  src: url('../fonts/PFBeauSansPro-Light.woff2') format('woff2'),
+       url('../fonts/PFBeauSansPro-Light.woff') format('woff'),
+       url('../fonts/PFBeauSansPro-Light.ttf') format('truetype'),
+       url('../fonts/PFBeauSansPro-Light.svg#PFBeauSansPro-Light') format('svg'),
+       url('../fonts/PFBeauSansPro-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*		font-family: 'PFBeauSansPro-Regular';		*/
+@font-face {
+  font-family: 'PFBeauSansPro-Regular';
+  src: url('../fonts/PFBeauSansPro-Regular.eot');
+  src: url('../fonts/PFBeauSansPro-Regular.woff2') format('woff2'),
+       url('../fonts/PFBeauSansPro-Regular.woff') format('woff'),
+       url('../fonts/PFBeauSansPro-Regular.ttf') format('truetype'),
+       url('../fonts/PFBeauSansPro-Regular.svg#PFBeauSansPro-Regular') format('svg'),
+       url('../fonts/PFBeauSansPro-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*		font-family: 'PFBeauSansPro-SemiBold';		*/
+@font-face {
+  font-family: 'PFBeauSansPro-SemiBold';
+  src: url('../fonts/PFBeauSansPro-SemiBold.eot');
+  src: url('../fonts/PFBeauSansPro-SemiBold.woff2') format('woff2'),
+       url('../fonts/PFBeauSansPro-SemiBold.woff') format('woff'),
+       url('../fonts/PFBeauSansPro-SemiBold.ttf') format('truetype'),
+       url('../fonts/PFBeauSansPro-SemiBold.svg#PFBeauSansPro-SemiBold') format('svg'),
+       url('../fonts/PFBeauSansPro-SemiBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*		font-family: 'PFBeauSansPro-ThinItalic';		*/
+@font-face {
+  font-family: 'PFBeauSansPro-ThinItalic';
+  src: url('../fonts/PFBeauSansPro-ThinItalic.eot');
+  src: url('../fonts/PFBeauSansPro-ThinItalic.woff2') format('woff2'),
+       url('../fonts/PFBeauSansPro-ThinItalic.woff') format('woff'),
+       url('../fonts/PFBeauSansPro-ThinItalic.ttf') format('truetype'),
+       url('../fonts/PFBeauSansPro-ThinItalic.svg#PFBeauSansPro-ThinItalic') format('svg'),
+       url('../fonts/PFBeauSansPro-ThinItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*		font-family: 'PFBeauSansPro-Thin';		*/
+@font-face {
+  font-family: 'PFBeauSansPro-Thin';
+  src: url('../fonts/PFBeauSansPro-Thin.eot');
+  src: url('../fonts/PFBeauSansPro-Thin.woff2') format('woff2'),
+       url('../fonts/PFBeauSansPro-Thin.woff') format('woff'),
+       url('../fonts/PFBeauSansPro-Thin.ttf') format('truetype'),
+       url('../fonts/PFBeauSansPro-Thin.svg#PFBeauSansPro-Thin') format('svg'),
+       url('../fonts/PFBeauSansPro-Thin.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.rubl {
+	font-family: 'PTRoubleSans', 'RUBSN';
+}
+/*   font-family: 'PTRoubleSans', 'RUBSN';   */
+@font-face {
+  font-family: 'PTRoubleSans';
+  src: url('../fonts/PTRoubleSans.woff') format('woff'),
+       url('../fonts/PTRoubleSans.ttf') format('truetype'),
+       url('../fonts/PTRoubleSans.svg#PTRoubleSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RUBSN';
+  src: url('../fonts/RUBSN.eot');
+  src: url('../fonts/RUBSN.woff2') format('woff2'),
+       url('../fonts/RUBSN.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
